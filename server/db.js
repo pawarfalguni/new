@@ -1,6 +1,4 @@
-let mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost:27017/mern8am',{
-    useNewUrlParser: true, 
-    useUnifiedTopology: true,
-    family: 4,
-})
+let mongoose = require("mongoose");
+let url =
+  "mongodb+srv://falgunipawar47:xbBlDjexI2BJHcv6@mern8am.jbvvz5z.mongodb.net/?retryWrites=true&w=majority";
+mongoose.connect(url);
