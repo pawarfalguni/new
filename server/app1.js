@@ -4,7 +4,13 @@ let connection = require("./db1");
 let cors = require("cors");
 let app = express();
 app.use(express.json());
-app.use(cors());
+app.use(cors(
+  {
+    origin:["https://deploy-mern-1whq.vercel.app"],
+    methods:["POST","GET"],
+    credentials: true
+  }
+));
 
 app.get("/studentmysql/:id", (req, res) => {
   connection.query("select * from student", (err, data) => {
