@@ -1,0 +1,90 @@
+
+#hrlogin{
+  width: 35%;
+  height: 50vh;
+  border-radius: 5px;
+}
+.head{
+  text-align: center;
+  padding-bottom: 10px;
+  color: darkslategray;
+}
+#hrlogin form input{
+  width: 100%;
+  padding: 5px;
+  border-radius: 5px;
+}
+.mean{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 55px;
+  margin-bottom: 25px;
+}
+.mean img{
+  width: 75%;
+  margin-left: 25px;
+  transform: translateX(30%);
+}
+.mean form{
+  width: 100%;
+}
+
+/* Media query for Responsive Page */
+
+
+@media (max-width:799px){     /*Ipad view*/
+  #hrlogin{
+    width: 35%;
+    height: 30vh;
+    margin: 20px;
+ 
+  }
+ 
+  #hrlogin form input{
+    width: 110%;
+    padding: 5px;
+    border-radius: 5px;
+  }
+  .mean{
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .mean img{
+    width: 60%;
+  }
+  
+}
+
+
+@media (max-width:477px){     /*Phone view*/
+  .mean{
+    display: inline-block;
+   }
+ 
+  #hrlogin{
+    width: 90%;
+    align-items: center;
+    height: 33vh;
+    margin: 10px;
+    transform: translateX(20%);
+  }
+  
+  #hrlogin form input{
+    width: 110%;
+    padding: 5px;
+    border-radius: 5px;
+  }
+
+  .mean{
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .mean img{
+    width: 90%;
+    height: 22vh;
+    margin: 10px;
+    transform: translateX(21%);
+  
+  }
+}

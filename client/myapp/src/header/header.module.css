@@ -1,0 +1,17 @@
+.header ul li a{
+ text-transform: uppercase;
+ color: black !important;
+ font-size:  0.89rem !important;
+ font-weight: 600 !important;
+ letter-spacing: 0.7px;
+}
+
+/* Media Query Start */
+
+/* @media(max-width: 799px){
+
+}
+
+@media(max-width: 477px){
+
+} */

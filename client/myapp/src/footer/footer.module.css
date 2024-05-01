@@ -1,0 +1,29 @@
+.footer{
+    background-color: blueviolet;
+    padding: 25px 0px;
+}
+.footer p,
+.footer p a{
+    color: white;
+}
+.footer p{
+    margin-bottom: 0px;
+}
+#end{
+    text-align: end;
+}
+
+/* Media Query Start */
+
+@media (max-width: 799px){
+  .footer p{
+    text-align: center;
+  }
+}
+
+@media (max-width: 477px){
+    .footer p{
+        text-align: center;
+      }
+  
+}

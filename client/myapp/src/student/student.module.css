@@ -1,0 +1,72 @@
+.bg_image{
+    background-image: url('https://t3.ftcdn.net/jpg/03/69/00/58/240_F_369005893_UYbUUUHDiB0HT7vs7EpO0JZ4vf830R5K.jpg');
+    padding: 20px 0px;
+    margin-bottom: 15px;
+}
+.bg_image h4, .bg_image ol li a,
+.bg_image h4, .bg_image ol li{
+    color: white !important;
+}
+
+.bg_image ol li::before{
+    color: white !important;
+}
+
+#all form{ 
+    width: 100%;
+}
+#all{
+   width: 150%;
+}
+
+#but button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+  }
+  .other{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  #mytable td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+  }
+
+/* Media Query start */
+
+@media(max-width: 799px){
+
+    #all form{ 
+        width: 100%;
+    }
+    #all{
+       width: 250%;
+       transform: translateX(-19%);
+    }
+   
+    #but button{
+        margin: 2px;
+        transform: translateX(5%);
+    }
+}
+ 
+@media(max-width: 477px){
+
+    #all form{ 
+        width: 100%;
+    }
+    #all{
+       width: 90%;
+       transform: translateX(2%);
+    }
+    
+    #but button{
+        margin: 1px;
+        transform: translateX(1%);
+    }
+}
