@@ -3,7 +3,6 @@ let connection = require("./db1");
 
 let cors = require("cors");
 let app = express();
-app.use(express.json());
 app.use(cors(
   {
     origin:["https://deploy-mern-1whq.vercel.app"],
@@ -11,6 +10,9 @@ app.use(cors(
     credentials: true
   }
 ));
+
+app.use(express.json());
+mongoose.connect('mongodb+srv://falgunipawar47:xbBlDjexI2BJHcv6@mern8am.jbvvz5z.mongodb.net/?retryWrites=true&w=majority&appName=mern8am')
 
 app.get("/studentmysql/:id", (req, res) => {
   connection.query("select * from student", (err, data) => {
